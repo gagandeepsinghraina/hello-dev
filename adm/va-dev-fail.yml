@@ -16,9 +16,9 @@ steps:
   configuration:
     buildType: maven
     pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
-    #packagesToIgnore:
-     # - com.oracle.*
-     # - org.apache.logging
+    packagesToIgnore:
+      - com.oracle.*
+      - org.apache.logging
     #maxPermissibleCvssV2Score: 1.0
     #maxPermissibleCvssV3Score: 1.0
   knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa4725fbqawhps377rxplobl7yc3kbpdrtdanlpo44ldob5722hjza
