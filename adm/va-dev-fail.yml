@@ -12,15 +12,15 @@ shell: bash
 
 steps:
 - type: VulnerabilityAudit
-  name: "Vulnerability Audit Step"
+  #name: "Vulnerability Audit Step"
   configuration:
     buildType: maven
     pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
-    packagesToIgnore:
+    #packagesToIgnore:
       - com.oracle.*
       - org.apache.logging
-    maxPermissibleCvssV2Score: 1.0
-    maxPermissibleCvssV3Score: 1.0
-  knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
-  vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaanb7pf7mjyey3ld4uffrtg4testumkcfgkv2j57kwr5juqf5o7aa
-  vulnerabilityAuditName: report1
+    #maxPermissibleCvssV2Score: 1.0
+    #maxPermissibleCvssV3Score: 1.0
+  knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa4725fbqawhps377rxplobl7yc3kbpdrtdanlpo44ldob5722hjza
+  #vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaamimegz6vbad3of5blhrgezxn35d5hrkqyd65ucz47pizitb4elja
+  #vulnerabilityAuditName: greport1
